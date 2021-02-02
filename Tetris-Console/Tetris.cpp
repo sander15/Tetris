@@ -54,8 +54,8 @@ void HandleNormalExit() {
 void HandleErrorExit(string msg, DWORD err) {
 	SetConsoleActiveScreenBuffer(GetStdHandle(STD_OUTPUT_HANDLE));
 	cerr << msg << endl;
-	cerr << "Error code :" << err << endl;
-	cout << "Enter any key to exit..." << endl;
+	cerr << "Error code: " << err << endl;
+	cout << "Enter any key to exit.." << endl;
 	cin.ignore();
 	cin.get();
 
@@ -279,7 +279,7 @@ void InitTetrominoes() {
 
 void InitPlayField() {
 	// Screen Settings
-	string  window_title = "TetrisCMD - MapleDate";
+	string  window_title = "TetrisCMD - Sander15";
 	SMALL_RECT min_window_size = { 0, 0, (short)1, (short)1 };
 	SMALL_RECT window_size = { 0, 0, (short)(CONSOLE_W - 1),
 		(short)(CONSOLE_H - 1) };
